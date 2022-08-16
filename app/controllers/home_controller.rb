@@ -26,7 +26,7 @@ class HomeController < ApplicationController
     end
   end
   
-  def draw_dice
+  def draw_dices
     user_id=params.dig(:source_user_id)
     dices=[1,2,3,4,5,6]
     if user_id=="Uc088af0808f722c8d650eb1c30223109"
