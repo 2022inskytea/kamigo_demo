@@ -25,7 +25,15 @@ class HomeController < ApplicationController
       @message="你是客人"
     end
   end
-
+  
+  def draw_dice
+    user_id=params.dig(:source_user_id)
+    dices=[1,2,3,4,5,6]
+    if user_id=="Uc088af0808f722c8d650eb1c30223109"
+       dices += [6,6,6,6,6]    
+    end
+    @message="你丟出的骰子點數是:#{dices.sample}"
+  end  
   private
 
   def get_profile(user_id)
