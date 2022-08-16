@@ -20,9 +20,9 @@ class HomeController < ApplicationController
   def test
     user_id=params.dig(:source_user_id)
     if user_id=="Uc088af0808f722c8d650eb1c30223109"
-      @message="你朂作者"
+      @message="你是作者"
     else
-      @message="你朂客人"
+      @message="你是客人"
     end
   end
 
