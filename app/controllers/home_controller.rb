@@ -34,6 +34,49 @@ class HomeController < ApplicationController
     end
     @message="你丟出的骰子點數是:#{dices.sample}"
   end  
+
+  def fun_slot
+   
+    part1=[
+      "新一代",
+      "下世代",
+      "前瞻",
+      "進階",
+      "先進",
+      "未來",
+      "分布式",
+      "混合式",
+      "DAG式", 
+    ]
+    part2=[
+      "高匿名",
+      "點對點",
+      "物聯網",
+      "大數據",
+      "高吞吐",
+      "抗ASIC",
+      "共享化",
+      "去中心化",
+      "智能合約",
+      "閃電交易",
+      "拜占庭算法",
+      "抗量子攻擊", 
+    ]
+    part3=[
+      "生態加密貨幣",
+      "平衡加密貨幣",
+      "平台加密貨幣",
+      "高速加密貨幣",
+      "跨鍊加密貨幣",
+      "側鍊加密貨幣",
+      "商業加密貨幣",
+      "即時加密貨幣",
+      "供應鏈加密貨幣",
+      "區塊鍊加密貨幣",
+      "高性能加密貨幣",
+    ]
+    @message="#{part1.sample}#{part2.sample}#{part3.sample}"
+  end
   private
 
   def get_profile(user_id)

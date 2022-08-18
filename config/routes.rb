@@ -30,6 +30,10 @@ Rails.application.routes.draw do
 
   # 擲骰子
   get "擲骰子", to: "home#draw_dices"
+  
+  # 加密貨幣
+  get "加密貨幣", to: "home#fun_slot"
+  
   # 學說話
   get "學 (*keyword) (*message)", to: 'home#learn'
 
