@@ -30,7 +30,7 @@ Rails.application.routes.draw do
 
   # Youtube頻道
   get "Youtube頻道", to: "videos#index"
-  get "Youtube頻道查詢/*keyword", to: "videos#index"
+
 
   # 擲骰子
   get "擲骰子", to: "home#draw_dices"

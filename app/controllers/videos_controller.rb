@@ -48,6 +48,6 @@ class VideosController < ApplicationController
         },
       ]
 
-      @keyword=params[:keyword]
+    
     end
   end
