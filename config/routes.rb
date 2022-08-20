@@ -28,6 +28,9 @@ Rails.application.routes.draw do
   get "(*location)天氣(*other)", to: "weather#show"
   get "你好嗎", to: "home#greeting"
 
+  # 查天氣
+  get "Youtube頻道", to: "videos#index"
+
   # 擲骰子
   get "擲骰子", to: "home#draw_dices"
   
