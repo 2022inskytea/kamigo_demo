@@ -55,6 +55,7 @@ class VideosController < ApplicationController
             if video[:頻道].include ? @keyword
                 filtered_videos << video
             end 
+        end
             @videos = filtered_videos   
       end
 
