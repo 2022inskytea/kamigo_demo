@@ -48,7 +48,15 @@ class VideosController < ApplicationController
         },
       ]
 
-      @keyword=params[:keyword]
-      
+      @keyword = params[:keyword]
+      if @keyword.present?
+        filtered_videos=[]
+        @videos.each do |video| 
+            if video[:頻道].include ? @keyword
+                filtered_videos << video
+            end 
+            @videos = filtered_videos   
+      end
+
     end
   end
