@@ -47,5 +47,7 @@ class VideosController < ApplicationController
           "圖片":"https://yt3.ggpht.com/F8ONCpLz9FbCUfAYevKBW_CV9K12SFbCe-ff7C2BjZ9n773_yG7thS5rxFnqaLsKDNii2TCuUg=s88-c-k-c0x00ffffff-no-rj",  
         },
       ]
+
+      @keyword=params[:keyword]
     end
   end
