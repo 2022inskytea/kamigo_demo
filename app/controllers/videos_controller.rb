@@ -55,6 +55,7 @@ class VideosController < ApplicationController
          video[:頻道].include? @keyword
         end
       end 
+      @videos = @videos.first(12)
       #if @keyword.present?
       #      filtered_videos=[]
       #     @videos.each do |video| 
