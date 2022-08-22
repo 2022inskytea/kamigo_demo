@@ -23,7 +23,7 @@
                         "size": "micro",
                         "hero": {
                             "type": "image",
-                            "url": "<%= #{video[:圖片]} %>",
+                            "url": "<%= video[:圖片] %>",
                             "size": "full",
                             "aspectMode": "cover",
                             "aspectRatio": "320:213"
@@ -34,7 +34,7 @@
                             "contents": [
                             {
                                 "type": "text",
-                                "text": "<%= #{video[:頻道]} %>",
+                                "text": "<%= video[:頻道] %>",
                                 "weight": "bold",
                                 "size": "sm",
                                 "wrap": true
@@ -52,7 +52,7 @@
                                 "action": {
                                 "type": "uri",
                                 "label": "點我",
-                                "uri": "<%= #{video[:網址]} %>"
+                                "uri": "<%= video[:網址] %>"
                                 },
                                 "gravity": "center",
                                 "color": "#009900",
