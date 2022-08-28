@@ -76,8 +76,10 @@
                 text video[:頻道], weight: :bold, size: :sm, wrap: true 
             end       
         end
-      foot do
-        url_button "點我", video[:網址], style: "primary", size: :sm, color: "#009900"    
+      foot spacing: :sm, paddingAll: "13px" do
+        vertical_box do
+            url_button "點我", video[:網址], style: "primary", size: :sm, color: "#009900" 
+        end   
       end
 
     end
