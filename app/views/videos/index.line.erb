@@ -64,6 +64,19 @@
                     <% end %> 
             ]
         }
-    }
+    },
+  
+<%= raw( Kamiflex.json(self) do
+  alt_text "LINE Flex Message Showcase: Local Search"
+  carousel do
+    bubbles @video, size: :micro do |video|
+      hero video[:網址], size: :full, aspectMode: "cover", aspectRatio: "320:213"
+      body spacing: :sm, paddingAll: "13px" do
+        text video[:頻道], weight: :bold, size: :sm, wrap: true     
+        end
+      end
+    end
+  end
+end ) %>
 ]
  
