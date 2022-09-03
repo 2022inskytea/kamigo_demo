@@ -1,10 +1,10 @@
 [
-     <% if @keyword.present? %>
+    <% if @keyword.present? %>
         {
             "type": "text",
             "text": "您查詢的關鍵字是 <%= @keyword %> 以下為頻道列表"
          },
-     <% end %>  
+    <% end %>  
     {
         "type": "text",
         "text": "<%= @videos.map do |video| 
